@@ -30,8 +30,6 @@ header {
     align-items: center;
     position: relative;
     width: 100%;
-    color: var(--lightest-slate);
-    font-family: var(--font-mono);
     counter-reset: item 0;
     z-index: 12;
 }
@@ -98,6 +96,7 @@ header nav a:hover {
     color: #F0F0F2;
     background-color: #d9941446;
 }
+/* this is the styling for the menu on small screen */
 .burger {
     display: none;
     padding: 0.5rem;
@@ -122,6 +121,8 @@ header.show .line3 {
 header.show .rightheader {
     transform: translateX(0%);
 }
+/* this ends the styling for the menu on small screen */
+
 .wrapper {
     display: flex;
     flex: row;
@@ -236,6 +237,7 @@ header.show .rightheader {
     padding: 100px 0;
     max-width: 900px;
     margin: 0 auto;
+    counter-reset: section;
 }
 .numbered-heading {
     display: flex;
@@ -299,6 +301,90 @@ header.show .rightheader {
     padding: 100px 0;
     max-width: 700px;
     margin: 0 auto;
+}
+.inner-resume {
+    display: flex;
+}
+.resume-list {
+    display: flex;
+    flex-direction: column;
+}
+.tablist-item {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 15px 20px;
+    border: none;
+    border-left: 2px solid #6072834b;
+    background-color: transparent;
+    font-family: 'Share Tech Mono', monospace;
+    color: #A4A5A6;
+    font-size: 1rem;
+    text-align: left;
+    white-space: nowrap;
+}
+.resume-list button:hover {
+    background-color: #53595a;
+    color: #D9A714;
+}
+.resume-list button.active {
+    border-left: 2px solid #D9A714;
+    color: #D9A714;
+}
+.resume-details {
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+}
+.tab-panel {
+    display: none;
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.tab-panel h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #F0F0F2;
+}
+.tab-panel a {
+    text-decoration: none;
+    color: #D99414;
+}
+.tab-panel a:hover {
+    color: #D9A714;
+}
+.range {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+.tab-panel h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.tab-panel ul {
+    margin: 0;
+    list-style-type: hebrew;
+    padding-left: 20px;
+}
+.tab-panel li::marker {
+    color: #D9A714;
+    padding-right: 10px;
+}
+.tab-panel li {
+    padding-left: 10px;
+}
+.panel-show {
+    display: block;
+}
+.panel-hide {
+    display: none;
 }
 .hobbies-section {
     display: flex;
@@ -373,11 +459,16 @@ footer a:hover, footer a:active {
         width: 90%;
         margin: auto;
     }
+}
+@media screen and (max-width: 600px) {
+    .leftheader a {
+        font-size: 2.5rem;
+    }
     .big-heading {
-        font-size: 4.5rem;
+        font-size: 3rem;
     }
     .welcome .sub-heading {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .footerlinks {
         display: inline;
@@ -392,5 +483,24 @@ footer a:hover, footer a:active {
         -webkit-box-pack: center;
         justify-content: center;
         -webkit-box-align: center;
+    }
+    .inner-resume {
+        flex-direction: column;
+    }
+    .resume-list {
+        flex-direction: row;
+        margin-bottom: 16px;
+    }
+    .tablist-item {
+        border-bottom: 2px solid #6072834b;
+        border-left: none;
+    }
+    .resume-list button.active {
+        border-bottom: 2px solid #D9A714;
+        color: #D9A714;
+        border-left: none;
+    }
+    .resume-details {
+        margin-left: 0;
     }
 }

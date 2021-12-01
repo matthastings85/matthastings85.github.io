@@ -59,7 +59,7 @@
                     <a href="#Projects">Check out my projects!</a>
                 </div>
             </section>
-            <section id="About" class="about-section">
+            <section id="About" class="about-section" data-sr-id="0">
                 <h2 class="numbered-heading">About Me</h2>
                 <div class="inner">
                     <div class="about-content">
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </section>
-            <section id="Projects" class="projects-section">
+            <section id="Projects" class="projects-section" data-sr-id="1">
                 <h2 class="numbered-heading">My Projects</h2>
                 <ul>
                     <li>disc golf</li>
@@ -80,15 +80,70 @@
                     <li>hanging with my kids</li>
                 </ul>
             </section>
-            <section id="Resume" class="resume-section">
+<!-- role="tablist" aria-label="Sample Tabs" -->
+<!-- role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0"  -->
+<!-- role="tab" aria-selected="false" aria-controls="panel-2" tabindex="1" -->
+<!-- role="tab" aria-selected="false" aria-controls="panel-3" tabindex="2" -->
+            <section id="Resume" class="resume-section" data-sr-id="2">
                 <h2 class="numbered-heading">My Resume</h2>
-                <ul>
-                    <li>disc golf</li>
-                    <li>soccer</li>
-                    <li>hanging with my kids</li>
-                </ul>
+                <div class="inner-resume">
+                    <div class="resume-list">
+                        <button id="tab-1" onclick="openPanel(event, 'panel-1')" class="tablist-item">
+                            <span>Ridge</span>
+                        </button>
+                        <button id="tab-2" onclick="openPanel(event, 'panel-2')" class="tablist-item">
+                            <span>Next Level</span>
+                        </button>
+                        <button id="tab-3" onclick="openPanel(event, 'panel-3')" class="tablist-item">
+                            <span>Southpoint</span>
+                        </button>
+                    </div>
+<!-- role="tabpanel" tabindex="0" aria-labelledby="tab-1" -->
+<!-- role="tabpanel" tabindex="0" aria-labelledby="tab-2" -->
+<!-- role="tabpanel" tabindex="0" aria-labelledby="tab-3" -->
+                    <div class="resume-details">
+                        <div id="panel-1" class="tab-panel">
+                            <h3>Ministry Services Director @ <a href="https://www.ridgechurch.net" target="_blank">Ridge Ministries, INC</a></h3>
+                            <p class="range">July 2017 to October 2021</p>
+                            <p>Developed budgeting and financial systems. Oversaw the accrual of 3 months operating margin in 3 years. Oversaw the purchase, renovation, and occupation of additional property. Recruited and develop 40+ volunteers. Created and managed support and operations systems for ministry staff.
+                            </p>
+                            <h4>Responsibilities included:</h4>
+                            <ul>
+                                <li>Budgeting & Finance</li>
+                                <li>Office & Human Resource Administration</li>
+                                <li>Facility Management</li>
+                                <li>Small Group Ministry Director</li>
+                            </ul>
+                        </div>
+                        <div id="panel-2" class="tab-panel">
+                            <h3><a href="https://www.nextlevelchurch.com" target="_blank">Next Level Church</a></h3>
+                            <p class="range">July 2012 to June 2017</p>
+                            <p>
+                                Started as a Student Pastor, leading 40+ volunteers and 80+ students. Took on the role of leading all ministries from birth-High School. Hired and led children’s ministry staff. Took over executive operational systems in the middle of financial crisis and helped turn the financial situation around through careful budgeting and establishing robust financial systems (increased margin from $10k to $120k in less than a year).
+                            </p>
+                            <h4>Roles included:</h4>
+                            <ul>
+                                <li>Executive and Family Ministries Pastor, 2016-2017.</li>
+                                <li>Family Ministries Pastor, 2014-2016.</li>
+                                <li>Student Pastor, 2012 -2014.</li>
+                            </ul>
+                        </div>
+                        <div id="panel-3" class="tab-panel">
+                            <h3><a href="https://southpointchurch.co.za/" target="_blank">Southpoint Church, Cape Town, South Africa</a></h3>
+                            <p class="range">June 2008 to June 2012</p>
+                            <h4>Roles included:</h4>
+                            <ul>
+                                <li>Tech and Music Director, 2008-2012.</li>
+                                <li>Director of Youth Ministries, 2009-2012. </li>
+                                <li>Leadership Development Program Director, 2009-2012. </li>
+                                <li>Director of Service Programming, 2010-2012.</li> 
+                                <li>Interim Director of Family Ministries, 2011-2012</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="Hobbies" class="hobbies-section">
+            <section id="Hobbies" class="hobbies-section" data-sr-id="3">
                 <h2 class="numbered-heading">My Hobbies</h2>
                 <ul>
                     <li>disc golf</li>
@@ -96,7 +151,7 @@
                     <li>hanging with my kids</li>
                 </ul>
             </section>
-            <section id="Contact" class="contact-section">
+            <section id="Contact" class="contact-section" data-sr-id="4">
                 <h1>Want to get in touch?</h1>
                 <ul>
                     <li>disc golf</li>
