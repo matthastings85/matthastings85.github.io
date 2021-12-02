@@ -280,6 +280,58 @@ header.show .rightheader {
 .img-container img {
     border-radius: 5px;
 }
+.education {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.education h2 {
+    text-align: center;
+}
+.swiper-container {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+.swiper {
+    max-width: 800px;
+    height: 300px;
+}
+.swiper-button-prev {
+    color: #A4A5A6;
+}
+.swiper-button-next {
+    color: #A4A5A6;
+}
+.swiper-slide {
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1C2426;
+    color: #A4A5A6;
+    border: solid 2px #A4A5A6;
+    border-radius: 5px;
+    font-family: 'Share Tech Mono', monospace;
+}
+.swiper-slide h3 {
+    margin: 0 0 16px 0;
+    font-size: 1.5rem;
+    color: #D99414;
+}
+.swiper-slide h4 {
+    margin: 0 0 16px 0;
+    color: #D99414;
+}
+.swiper-slide h5 {
+    margin: 0;
+    color: #D99414;
+}
+.swiper-slide p {
+    margin: 0 0 16px 0;
+}
+.swiper-slide ul {
+    font-family: 'Share Tech Mono', monospace;
+}
 .projects-section {
     display: flex;
     -webkit-box-pack: center;
@@ -459,6 +511,10 @@ footer a:hover, footer a:active {
         width: 90%;
         margin: auto;
     }
+    .swiper {
+        width: 80%;
+        height: fit-content;
+    }
 }
 @media screen and (max-width: 600px) {
     .leftheader a {
@@ -502,5 +558,9 @@ footer a:hover, footer a:active {
     }
     .resume-details {
         margin-left: 0;
+    }
+    .swiper {
+        width: 90%;
+        height: fit-content;
     }
 }

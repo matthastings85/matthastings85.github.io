@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/863185ec7c.js" crossorigin="anonymous"></script>
-    <title>Matt Hastings Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
+    <link href="CSS/style.css" rel="stylesheet">
+    <title>Matt Hastings Portfolio</title>
 </head>
 <body id="1">
     <header>
@@ -22,8 +23,8 @@
                 <ol>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#About">About</a></li>
+                    <li><a href="#Resume">Work</a></li>
                     <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Resume">Resume</a></li>
                     <li><a href="#Hobbies">Hobbies</a></li>
                 </ol>
                 <div class="nav-contact"><a href="mailto:matthastings85@gmail.com"</a>Contact</a></div>
@@ -59,7 +60,7 @@
                     <a href="#Projects">Check out my projects!</a>
                 </div>
             </section>
-            <section id="About" class="about-section" data-sr-id="0">
+            <section id="About" class="about-section">
                 <h2 class="numbered-heading">About Me</h2>
                 <div class="inner">
                     <div class="about-content">
@@ -71,21 +72,63 @@
                         <img src="Images/matt.jpeg" alt="Matt" title="Matt Hastings" width="300px">
                     </div>
                 </div>
+                <div id="Education" class="education">
+                    <h2>Education</h2>
+                    <div class="swiper-container">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <h3>Master of Arts – New Testament</h3>
+                                    <p>2015-2019</p>
+                                    <h4>Gordon-Conwell Theological Seminary, Charlotte, NC, USA</h4>
+                                    <h5>Graduation Honors:</h5>
+                                    <ul> 
+                                        <li>Summa Cum Laude</li>
+                                        <li>GPA: 4.0/4.0</li>
+                                        <li>Faculty Chosen Baccalaureate Student Speaker</li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Master of Arts – Old Testament</h3>
+                                    <p>2012-2017</p>
+                                    <h4>Gordon-Conwell Theological Seminary, Charlotte, NC, USA</h4>
+                                    <h5>Graduation Honors:</h5>
+                                    <ul> 
+                                        <li>Summa Cum Laude</li>
+                                        <li>GPA: 3.983/4.0</li>
+                                        <li>Biblical Studies Award, Biblical Languages Award</li>
+                                    </ul>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Bachelor of Science – Biblical Studies</h3>
+                                    <p>2004-2008,</p>
+                                    <h4>Liberty University, Lynchburg, VA, USA</h4>
+                                    <h5>Graduation Honors:</h5>
+                                    <ul> 
+                                        <li>Summa Cum Laude</li>
+                                        <li>GPA: 3.97/4.0</li>
+                                        <li>Honors Student, Dean’s List</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="Projects" class="projects-section" data-sr-id="1">
-                <h2 class="numbered-heading">My Projects</h2>
-                <ul>
-                    <li>disc golf</li>
-                    <li>soccer</li>
-                    <li>hanging with my kids</li>
-                </ul>
-            </section>
-<!-- role="tablist" aria-label="Sample Tabs" -->
-<!-- role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0"  -->
-<!-- role="tab" aria-selected="false" aria-controls="panel-2" tabindex="1" -->
-<!-- role="tab" aria-selected="false" aria-controls="panel-3" tabindex="2" -->
-            <section id="Resume" class="resume-section" data-sr-id="2">
-                <h2 class="numbered-heading">My Resume</h2>
+            <section id="Resume" class="resume-section">
+                <h2 class="numbered-heading">Where I've worked</h2>
                 <div class="inner-resume">
                     <div class="resume-list">
                         <button id="tab-1" onclick="openPanel(event, 'panel-1')" class="tablist-item">
@@ -143,7 +186,15 @@
                     </div>
                 </div>
             </section>
-            <section id="Hobbies" class="hobbies-section" data-sr-id="3">
+            <section id="Projects" class="projects-section">
+                <h2 class="numbered-heading">My Projects</h2>
+                <ul>
+                    <li>disc golf</li>
+                    <li>soccer</li>
+                    <li>hanging with my kids</li>
+                </ul>
+            </section>
+            <section id="Hobbies" class="hobbies-section">
                 <h2 class="numbered-heading">My Hobbies</h2>
                 <ul>
                     <li>disc golf</li>
@@ -151,7 +202,7 @@
                     <li>hanging with my kids</li>
                 </ul>
             </section>
-            <section id="Contact" class="contact-section" data-sr-id="4">
+            <section id="Contact" class="contact-section">
                 <h1>Want to get in touch?</h1>
                 <ul>
                     <li>disc golf</li>
@@ -176,6 +227,7 @@
     </div>
     <p>Built by Matt Hastings</p>
 </footer>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="./Javascript/portfolio.js"></script>
 </body>
 </html>
