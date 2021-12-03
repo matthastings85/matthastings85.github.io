@@ -284,9 +284,11 @@ header.show .rightheader {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 50px;
 }
 .education h2 {
     text-align: center;
+    padding-right: 12%;
 }
 .swiper-container {
     max-width: 800px;
