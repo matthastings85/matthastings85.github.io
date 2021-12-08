@@ -129,6 +129,7 @@ header.show .rightheader {
 }
 .left {
     width: 10%;
+    order: 1;
 }
 .leftlinks {
     position: fixed;
@@ -158,9 +159,11 @@ header.show .rightheader {
 }
 .center {
     width: 80%;
+    order: 2;
 }
 .right {
     width: 10%;
+    order: 3;
 }
 .rightlinks {
     display: flex;
@@ -283,12 +286,12 @@ header.show .rightheader {
 .education {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     margin-top: 50px;
 }
 .education h2 {
     text-align: center;
-    padding-right: 12%;
 }
 .swiper-container {
     max-width: 800px;
@@ -333,6 +336,9 @@ header.show .rightheader {
 }
 .swiper-slide ul {
     font-family: 'Share Tech Mono', monospace;
+}
+swiper-pagination {
+    color: #D99414;
 }
 .projects-section {
     display: flex;
@@ -491,7 +497,7 @@ footer a:hover, footer a:active {
         right: 0;
         height: 80vh;
         width: 70%;
-        flex: column;
+        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         background: #1C2426;
@@ -501,7 +507,7 @@ footer a:hover, footer a:active {
     }
     header nav ol {
         display: block;
-        text-align: center;
+        text-align: left;
     }
     .leftheader {
         width: 80%;
@@ -517,6 +523,10 @@ footer a:hover, footer a:active {
         width: 80%;
         height: fit-content;
     }
+    .footerlinks {
+        display: inline;
+    }
+
 }
 @media screen and (max-width: 600px) {
     .leftheader a {
@@ -527,9 +537,6 @@ footer a:hover, footer a:active {
     }
     .welcome .sub-heading {
         font-size: 1.5rem;
-    }
-    .footerlinks {
-        display: inline;
     }
     .inner {
         display: flex;
@@ -562,7 +569,16 @@ footer a:hover, footer a:active {
         margin-left: 0;
     }
     .swiper {
-        width: 90%;
-        height: fit-content;
+        max-width: 375px;
+        height: 400px;
+    }
+    .swiper-slide {
+        padding: 20px 50px;
+    }
+    .numbered-heading {
+        font-size: 1.5rem;
+    }
+    .numbered-heading::before {
+        font-size: 1rem;
     }
 }

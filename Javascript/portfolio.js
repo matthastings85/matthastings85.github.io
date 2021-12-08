@@ -35,9 +35,8 @@ function openPanel(evt, panelName) {
 document.getElementById("tab-1").click();
 
 const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
-    effect: 'cards',
+    speed: 800,
+    effect: 'coverflow',
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
