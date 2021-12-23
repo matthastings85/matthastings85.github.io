@@ -1,4 +1,7 @@
-document.addEventListener('DOMContentLoaded', (nav, headerHide));
+document.addEventListener('DOMContentLoaded', () => {
+    nav();
+    headerHide();
+});
 
 function nav() {
     const burger = document.querySelector('.burger');
@@ -22,6 +25,7 @@ function nav() {
         nav.classList.remove('show');
     });
 };
+// nav();
 
 function headerHide() {
     const doc = document.documentElement;
