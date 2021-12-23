@@ -622,8 +622,8 @@ footer a:hover, footer a:active {
         margin-left: 0;
     }
     .swiper {
-        max-width: 400px;
-        height: 450px;
+        width: 365px;
+        height: 375px;
     }
     .swiper-slide {
         padding: 20px 50px;
