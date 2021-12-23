@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/863185ec7c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico">
-    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/style2.css" rel="stylesheet">
     <title>Matt Hastings Portfolio</title>
 </head>
 <body id="1">
-    <header>
+    <header id="site-header">
         <nav class="nav-bar">
             <div class="leftheader">
                 <a href="#1">Matt Hastings</a>
@@ -26,7 +26,7 @@
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Hobbies">Hobbies</a></li>
                 </ol>
-                <div class="nav-contact"><a href="mailto:matthastings85@gmail.com"</a>Contact</a></div>
+                <div class="nav-contact"><a href="mailto:matthastings85@gmail.com">Contact</a></div>
             </div>
             <div class="burger">
                 <div class="line line1"></div>
@@ -41,10 +41,10 @@
                 <h1>Hello, my name is</h1>
                 <h2 class="big-heading">Matt Hastings</h2>
                 <p class="sub-heading">
-                    I'm a Junior Front-End Web Developer. 
+                    I'm a Junior Full Stack Developer. 
                 </p>
                 <p>
-                    I'm learning my trade and ready to share what I've been working on. I've gained proficiency in HTML, CSS, and JavaScript. I'm looking for opportunities to apply what I've learned in a professional environment.
+                    I'm currently loading and soon I'll be fully loaded and ready to share what I've been working on. I've gained proficiency in HTML, CSS, and JavaScript. I'm looking for opportunities to apply what I've learned in a professional environment.
                 </p>
                 <div>
                     <a href="#Projects">Check out my projects!</a>
@@ -118,13 +118,13 @@
                 <h2 class="numbered-heading">Where I've worked</h2>
                 <div class="inner-resume">
                     <div class="resume-list">
-                        <button id="tab-1" onclick="openPanel(event, 'panel-1')" class="tablist-item">
+                        <button id="tab-1" class="tablist-item">
                             <span>Ridge</span>
                         </button>
-                        <button id="tab-2" onclick="openPanel(event, 'panel-2')" class="tablist-item">
+                        <button id="tab-2" class="tablist-item">
                             <span>Next Level</span>
                         </button>
-                        <button id="tab-3" onclick="openPanel(event, 'panel-3')" class="tablist-item">
+                        <button id="tab-3" class="tablist-item">
                             <span>Southpoint</span>
                         </button>
                     </div>
@@ -172,11 +172,31 @@
             </section>
             <section id="Projects" class="projects-section">
                 <h2 class="numbered-heading">My Projects</h2>
-                <ul>
-                    <li>disc golf</li>
-                    <li>soccer</li>
-                    <li>hanging with my kids</li>
-                </ul>
+                <div class="projects-inner">
+                    <div class="project-card" onclick="location.href='./calculator/calculator.html';" style="cursor: pointer;">
+                        <h3>Calculator Project</h3>
+                        <p>This is a Frontend Masters bootcamp project. We styled the calculator with HTML/CSS and then programed basic functionality with JavaScript.</p>
+                    </div>
+                    <div class="project-card" onclick="location.href='./mole-game/molegame.html';" style="cursor: pointer;">
+                        <h3>Feed-A-Mole Game</h3>
+                    </div>
+                    <div class="project-card" onclick="location.href='./Coin Game/index.html';" style="cursor: pointer;">
+                        <h3>Coin Game</h3>
+                        <p>Try catch the coin.</p>
+                    </div>
+                    <div class="project-card" onclick="location.href='./movies fight/index.html';" style="cursor: pointer;">
+                        <h3>Movie Fight</h3>
+                        <p>Movie Fight.</p>
+                    </div>
+                    <div class="project-card" onclick="location.href='./calculator/calculator.html';" style="cursor: pointer;">
+                        <h3>Calculator Project</h3>
+                        <p>This is a Frontend Masters bootcamp project. We styled the calculator with HTML/CSS and then programed basic functionality with JavaScript.</p>
+                    </div>
+                    <div class="project-card" onclick="location.href='./calculator/calculator.html';" style="cursor: pointer;">
+                        <h3>Calculator Project</h3>
+                        <p>This is a Frontend Masters bootcamp project. We styled the calculator with HTML/CSS and then programed basic functionality with JavaScript.</p>
+                    </div>
+                </div>
             </section>
             <section id="Hobbies" class="hobbies-section">
                 <h2 class="numbered-heading">My Hobbies</h2>
@@ -187,12 +207,11 @@
                 </ul>
             </section>
             <section id="Contact" class="contact-section">
-                <h1>Want to get in touch?</h1>
-                <ul>
-                    <li>disc golf</li>
-                    <li>soccer</li>
-                    <li>hanging with my kids</li>
-                </ul>
+                <h1 class="numbered-heading">Get in touch</h1>
+                <p>As I am acquiring new skills in programming, I'm activively looking for new opportunities to put my skills into practice. If you have a job opportunity or a project for me to work, please drop me a quick email. I look forward to hearing from you.</p>
+                <div>
+                    <a href="mailto::matthastings85@gmail.com">Contact Me</a>
+                </div>
             </section>
         </div>
         <div class="left">

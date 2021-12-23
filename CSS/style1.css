@@ -3,8 +3,8 @@
 }
 
   body {
-    background-color: #1C2426;
-    color: #A4A5A6;
+    background-color: #2C3A40;
+    color: #5E8C88;
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ header {
     top: 0px;
     z-index: 11;
     width: 100%;
-    background-color: #1C2426;
+    background-color: #2C3A40;
 }
 .nav-bar {
     display: flex;
@@ -41,7 +41,7 @@ header {
 }
 .leftheader a {
     text-decoration: none;
-    color: #D9A714;
+    color: #8AA6A1;
     display: block;
     font-size: 4rem;
 }
@@ -71,13 +71,13 @@ header nav li {
 }
 header nav li::before {
     content: "0" counter(item) ".";
-    color: #D9A714;
+    color: #8AA6A1;
     font-family: 'Share Tech Mono', monospace;
     text-align: right;
 }
 header nav a {
     font-size: 1rem;
-    color: #A4A5A6;
+    color: #5E8C88;
     padding: 10px 10px 10px 5px;
     display: inline-block;
     text-decoration: none;
@@ -85,17 +85,17 @@ header nav a {
     position: relative;
 }
 header nav a:hover {
-    color: #F0F0F2;
+    color: #F2F2F2;
 }
 .nav-contact a {
-    border: 1px solid #D9A714;
+    border: 1px solid #8AA6A1;
     border-radius: 5px;
     padding: 10px 20px;
     font-family: 'Share Tech Mono', monospace;
 }
 .nav-contact a:hover {
-    color: #F0F0F2;
-    background-color: #D9A71446;
+    color: #F2F2F2;
+    background-color: #8AA6A146;
 }
 /* this is the styling for the menu on small screen */
 .burger {
@@ -107,7 +107,7 @@ header nav a:hover {
     height: 3px;
     width: 35px;
     margin: 0.5rem 0;
-    background-color: #A4A5A6;
+    background-color: #5E8C88;
     transition: transform 0.75s ease, opacity 0.75s ease;
 }
 header.show .line1 {
@@ -140,22 +140,22 @@ header.show .rightheader {
 .left a {
     display: block;
     font-size: 2rem;
-    color: #A4A5A6;
+    color: #5E8C88;
     margin: 10px 6px;
 }
 .left a:hover {
-    color: #F0F0F2;
+    color: #F2F2F2;
 }
 .sideline-left {
     height: 100px;
     width: 1px;
-    background-color: #A4A5A6;
+    background-color: #5E8C88;
     margin: 15px 0 0 22px;
 }
 .sideline-right {
     height: 100px;
     width: 1px;
-    background-color: #A4A5A6;
+    background-color: #5E8C88;
     margin: 20px 10px 0 0;
 }
 .center {
@@ -176,12 +176,12 @@ header.show .rightheader {
 }
 .right a {
     text-decoration: none;
-    color: #A4A5A6;
+    color: #5E8C88;
     font-family: 'Share Tech Mono', monospace;
     letter-spacing: 2px;
 }
 .right a:hover {
-    color: #F0F0F2;
+    color: #F2F2F2;
 }
 .welcome {
     display: flex;
@@ -195,41 +195,41 @@ header.show .rightheader {
     margin: 0 auto;
 }
 .welcome h1 {
-    color: #D9A714;
+    color: #8AA6A1;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1rem;
     margin: 0 0 10px 4px;
 }
 .big-heading {
-    color: #F0F0F2;
+    color: #F2F2F2;
     font-size: 5rem;
     margin: 0;
 }
 .welcome p {
-    color: #A4A5A6;
+    color: #5E8C88;
     font-size: 1rem;
     margin: 10px 0 0 0;
     max-width: 540px;
 }
 .welcome .sub-heading {
-    color: #D9A714;
+    color: #8AA6A1;
     font-size: 3rem;
     margin: 0;
     max-width: fit-content;
 }
 .welcome a {
     display: block;
-    color: #D9A714;
+    color: #8AA6A1;
     font-family: 'Share Tech Mono', monospace;
     text-decoration: none;
-    border: 1px solid #D9A714;
+    border: 1px solid #8AA6A1;
     border-radius: 5px;
     padding: 20px 28px;
     margin: 50px 0 0 0;
 }
 .welcome a:hover {
-    color: #F0F0F2;
-    background-color: #D9A71446;
+    color: #F2F2F2;
+    background-color: #8AA6A146;
 }
 .about-section {
     display: flex;
@@ -259,7 +259,7 @@ header.show .rightheader {
     counter-increment: section 1;
     content: "0" counter(section) ".";
     margin-right: 10px;
-    color: #D9A714;
+    color: #8AA6A1;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.5rem;
 }
@@ -304,18 +304,18 @@ header.show .rightheader {
     height: 300px;
 }
 .swiper-button-prev {
-    color: #A4A5A6;
+    color: #5E8C88;
 }
 .swiper-button-next {
-    color: #A4A5A6;
+    color: #5E8C88;
 }
 .swiper-slide {
     padding: 20px 80px;
     display: flex;
     flex-direction: column;
-    background-color: #1C2426;
-    color: #A4A5A6;
-    border: solid 2px #A4A5A6;
+    background-color: #2C3A40;
+    color: #5E8C88;
+    border: solid 2px #5E8C88;
     border-radius: 5px;
     font-family: 'Share Tech Mono', monospace;
     background-color: #395959;
@@ -323,15 +323,15 @@ header.show .rightheader {
 .swiper-slide h3 {
     margin: 0 0 16px 0;
     font-size: 1.5rem;
-    color: #D9A714;
+    color: #8AA6A1;
 }
 .swiper-slide h4 {
     margin: 0 0 16px 0;
-    color: #D9A714;
+    color: #8AA6A1;
 }
 .swiper-slide h5 {
     margin: 0;
-    color: #D9A714;
+    color: #8AA6A1;
 }
 .swiper-slide p {
     margin: 0 0 16px 0;
@@ -340,7 +340,7 @@ header.show .rightheader {
     font-family: 'Share Tech Mono', monospace;
 }
 swiper-pagination {
-    color: #D9A714;
+    color: #8AA6A1;
 }
 .projects-section {
     display: flex;
@@ -367,7 +367,7 @@ swiper-pagination {
     border-radius: 10px;
 }
 div.project-card:hover {
-    color: #F0F0F2;
+    color: #F2F2F2;
 }
 .resume-section {
     display: flex;
@@ -399,18 +399,18 @@ div.project-card:hover {
     border-left: 2px solid #395959;
     background-color: transparent;
     font-family: 'Share Tech Mono', monospace;
-    color: #A4A5A6;
+    color: #5E8C88;
     font-size: 1rem;
     text-align: left;
     white-space: nowrap;
 }
 .resume-list button:hover {
     background-color: #395959;
-    color: #F0F0F2;
+    color: #F2F2F2;
 }
 .resume-list button.active {
-    border-left: 2px solid #F0F0F2;
-    color: #F0F0F2;
+    border-left: 2px solid #F2F2F2;
+    color: #F2F2F2;
 }
 .resume-details {
     position: relative;
@@ -428,14 +428,14 @@ div.project-card:hover {
 .tab-panel h3 {
     margin-top: 0;
     margin-bottom: 10px;
-    color: #F0F0F2;
+    color: #F2F2F2;
 }
 .tab-panel a {
     text-decoration: none;
-    color: #D9A714;
+    color: #8AA6A1;
 }
 .tab-panel a:hover {
-    color: #F0F0F2;
+    color: #F2F2F2;
     color:#395959;
 }
 .range {
@@ -453,7 +453,7 @@ div.project-card:hover {
     padding-left: 20px;
 }
 .tab-panel li::marker {
-    color: #F0F0F2;
+    color: #F2F2F2;
     padding-right: 10px;
 }
 .tab-panel li {
@@ -490,21 +490,21 @@ div.project-card:hover {
 footer {
     margin-bottom: 3rem;
     text-align: center;
-    color: #A4A5A6;
+    color: #5E8C88;
     font-family: 'Share Tech Mono', monospace;
     font-size: 0.8rem;
 }
 footer a {
     text-decoration: none;
     font-size: 2rem;
-    color: #A4A5A6;
+    color: #5E8C88;
     padding: 10px;
 }
 .footerlinks {
     display: none;
 }
 footer a:hover, footer a:active {
-    color: #F0F0F2;
+    color: #F2F2F2;
 }
 @media screen and (max-width: 1000px) {
     .burger {
@@ -519,7 +519,7 @@ footer a:hover, footer a:active {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        background: #1C2426;
+        background: #2C3A40;
         transform: translateX(100%);
         transition: transform 1s ease;
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
@@ -580,8 +580,8 @@ footer a:hover, footer a:active {
         border-left: none;
     }
     .resume-list button.active {
-        border-bottom: 2px solid #F0F0F2;
-        color: #F0F0F2;
+        border-bottom: 2px solid #F2F2F2;
+        color: #F2F2F2;
         border-left: none;
     }
     .resume-details {

@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', nav);
+document.addEventListener('DOMContentLoaded', (nav, headerHide));
 
 function nav() {
     const burger = document.querySelector('.burger');
@@ -12,24 +12,72 @@ function nav() {
         nav.classList.remove('show');
     });
 
+    const homeBtn = document.querySelector('.leftheader');
+    homeBtn.addEventListener('click', ()=>{
+        nav.classList.remove('show');
+    });
+
     const mainBody = document.querySelector('.center');
     mainBody.addEventListener('click', ()=>{
         nav.classList.remove('show');
     });
 };
 
-function openPanel(evt, panelName) {
-    var i, tabPanel, tablistItem;
-    tabPanel = document.getElementsByClassName("tab-panel");
-    for (i = 0; i < tabPanel.length; i++) {
-      tabPanel[i].style.display = "none";
+function headerHide() {
+    const doc = document.documentElement;
+    const w = window;
+    const header = document.getElementById('site-header');
+
+    let prevScroll = w.scrollY || doc.scrollTop;
+    let curScroll;
+    let direction = 0;
+    let prevDirection = 0;
+
+    const checkScroll = ()=>{
+        curScroll = w.scrollY || doc.scrollTop;
+        if (curScroll > prevScroll) {
+            direction = 2;
+        } else {
+            direction = 1;
+        }
+        if(direction !== prevDirection) {
+            toggleHeader(direction, curScroll)
+        }
+        prevScroll = curScroll;
     }
-    tablistItem = document.getElementsByClassName("tablist-item");
-    for (i = 0; i < tablistItem.length; i++) {
-      tablistItem[i].className = tablistItem[i].className.replace(" active", "");
+    const toggleHeader = (direction, curScroll) => {
+        if (direction === 2 && curScroll > 111) {
+            header.classList.add('hide');
+            prevDirection = direction;
+        } else if(direction === 1){
+            header.classList.remove('hide');
+            prevDirection = direction
+        }
+    }
+    w.addEventListener('scroll', checkScroll);
+}
+
+const resumeTabs = document.querySelectorAll('.tablist-item');
+const resumePanels = document.querySelectorAll('.tab-panel');
+
+for(let i = 0; i < resumeTabs.length; i++) {
+    let tab = resumeTabs[i];
+    let panel = resumePanels[i];
+    tab.addEventListener('click', function(){
+        openPanel(`${tab.id}`, `${panel.id}`);
+    });
+};
+
+function openPanel(tabName, panelName) {
+    for (let i = 0; i < resumePanels.length; i++) {
+      resumePanels[i].style.display = "none";
+    }
+    for (let i = 0; i < resumeTabs.length; i++) {
+        let tab = resumeTabs[i];
+        tab.className = tab.className.replace(" active", "");
     }
     document.getElementById(panelName).style.display = "block";
-    evt.currentTarget.className += " active";
+    document.getElementById(tabName).className += " active";
 };
 
 document.getElementById("tab-1").click();
